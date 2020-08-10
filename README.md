@@ -36,13 +36,13 @@ This project includes a `src/components` folder containing several React compone
 
 #### Steps
 
-- [ ] You will add functionality to all components inside inside `src/components`.
-- [ ] Work on the components **in the same order in which they display in Chrome** (to go from easiest challenge to hardest).
-- [ ] Each file includes a link to a video, and a set of instructions which can be summarized as:
-  - Watch the video demoing the finished component, and think about how much state is needed.
-  - Create the necessary slices of component state using the state hook.
-  - Fix the JSX so it displays information derived from state, instead of hard-coded data.
-  - Fix the event handlers so they allow the user to update state by interacting with the page.
+- [X] You will add functionality to all components inside inside `src/components`.
+- [X] Work on the components **in the same order in which they display in Chrome** (to go from easiest challenge to hardest).
+- [X] Each file includes a link to a video, and a set of instructions which can be summarized as:
+- [X]Watch the video demoing the finished component, and think about how much state is needed.
+- [X] Create the necessary slices of component state using the state hook.
+- [X] Fix the JSX so it displays information derived from state, instead of hard-coded data.
+- [X] Fix the event handlers so they allow the user to update state by interacting with the page.
 
 ### Task 2b: Exit Ticket
 
