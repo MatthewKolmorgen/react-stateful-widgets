@@ -14,10 +14,10 @@ Our first impulse might be to say 2 different states:
 But a single slice of state is all that's needed here: whether spinner is on or not.
 The text of the button can be derived from the value of that one slice of state.
 
-STEP 0:
+STEP 0: Done
   Start by studying the component below, and importing the state hook.
 
-STEP 1:
+STEP 1:Done
   Create a 'spinnerOn', 'setSpinnerOn' pair of variables using the state hook.
   The 'spinnerOn' should be initialized to true if you want the spinner to be visible on page load, false otherwise.
 
@@ -32,27 +32,29 @@ STEP 2:
 STEP 3:
   Use a ternary expression inside the text of the button, to render "Hide" or "Show" depending on the value of 'spinnerOn'.
 
-STEP 4:
+STEP 4:Done
   This click handler needs to toggle the spinner by setting "whether on" to be the opposite of what it currently is.
   Do you remember the operator we use to do "not"?
 */
 
-import React from 'react'; /* STEP 0 */
+import React, {useState} from 'react'; /* STEP 0 */
 
 export default function Spinner() {
   /* STEP 1 */
+  const [spinnerOn, setSpinnerOn] = useState(true)
 
   const toggleSpinner = () => {
     /* STEP 4 */
+    setSpinnerOn(!spinnerOn)
   };
 
   return (
     <div className='widget-spinner container'>
       <h2>Spinner</h2>
       {
-        true && <div className='spinner'>--+--</div> /* STEP 2 */
+        spinnerOn && <div className='spinner'>--+--</div>
       }
-      <button onClick={toggleSpinner}>Hide Spinner</button> {/* STEP 3 */}
+      <button onClick={toggleSpinner}>{spinnerOn? 'Show' : 'Hide'} Spinner</button>
     </div>
   );
 }
